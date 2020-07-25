@@ -27,4 +27,8 @@ I have no idea why the file .gitignore doesn't work when I add entries after the
 
 ## K3S
 
-After tried k8s I decided to have a look at K3S es a kubernetes cluster, because of the restrictions of the raspberry pies.
+After tried k8s I decided to have a look at K3S as a kubernetes cluster, because of the restrictions of the raspberry pies.
+
+The base is hypriot-OS flashed on a 64 Mbit card. Then configured to get access via ssh and correct keyboard layout and language settings.
+
+There is 
