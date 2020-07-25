@@ -1,0 +1,15 @@
+# Lka, 01.06.2020 device_tracker
+- platform: fritz
+  host: 192.168.178.1
+  username: !secret fritz_usr
+  password: !secret fritz_pwd
+  interval_seconds: 60
+  new_device_defaults:
+    track_new_devices: false
+- platform: fritz
+  password: !secret fritz_pwd
+  host: 192.168.178.29
+- platform: fritz
+  password: !secret fritz_pwd
+  host: 192.168.178.38
+

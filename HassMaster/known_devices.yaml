@@ -1,0 +1,406 @@
+
+android:
+  icon:
+  mac: 40:A1:08:A5:15:F4
+  name: Android
+  picture:
+  track: false
+
+fernseher_wz:
+  icon:
+  mac: D4:9D:C0:BE:99:E6
+  name: Fernseher-WZ
+  picture:
+  track: false
+
+galaxy_a10:
+  icon:
+  mac: A8:87:B3:F6:C6:8F
+  name: Galaxy-A10
+  picture:
+  track: true
+
+galaxy_tab_a_2016:
+  icon:
+  mac: BC:76:5E:EF:86:EA
+  name: Galaxy-Tab-A-2016
+  picture:
+  track: false
+
+hp_officejet7500:
+  icon:
+  mac: 2C:44:FD:09:CE:DF
+  name: HP-OfficeJet7500
+  picture:
+  track: false
+
+pc_lkahome:
+  icon:
+  mac: B4:2E:99:65:D2:34
+  name: PC-LkaHome
+  picture:
+  track: false
+
+philips_hue:
+  icon:
+  mac: 00:17:88:7B:6B:3A
+  name: Philips-hue
+  picture:
+  track: false
+
+samsung_galaxy_s7:
+  icon:
+  mac: 8C:F5:A3:5C:44:16
+  name: Samsung-Galaxy-S7
+  picture:
+  track: true
+
+sonoszp:
+  icon:
+  mac: B8:E9:37:B0:72:60
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_2:
+  icon:
+  mac: 34:7E:5C:81:7F:8E
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_3:
+  icon:
+  mac: B8:E9:37:B0:72:D2
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_4:
+  icon:
+  mac: 94:9F:3E:92:EF:2E
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_5:
+  icon:
+  mac: B8:E9:37:95:37:8E
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_6:
+  icon:
+  mac: 78:28:CA:00:8D:2E
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_7:
+  icon:
+  mac: B8:E9:37:37:11:86
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_8:
+  icon:
+  mac: B8:E9:37:B0:60:E6
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_9:
+  icon:
+  mac: 5C:AA:FD:41:67:78
+  name: SonosZP
+  picture:
+  track: false
+
+sonoszp_10:
+  icon:
+  mac: 5C:AA:FD:41:5B:AC
+  name: SonosZP
+  picture:
+  track: false
+
+amazon_921d4f4b8:
+  icon:
+  mac: FC:49:2D:6B:FF:1C
+  name: amazon-921d4f4b8
+  picture:
+  track: false
+
+amazon_be691b29f:
+  icon:
+  mac: 18:74:2E:1C:51:CB
+  name: amazon-be691b29f
+  picture:
+  track: false
+
+fritz_box:
+  icon:
+  mac: BC:05:43:AB:62:49
+  name: fritz.box
+  picture:
+  track: false
+
+fritz_repeater:
+  icon:
+  mac: CE:0E:14:16:E5:E6
+  name: fritz.repeater
+  picture:
+  track: false
+
+fritzrepeater2:
+  icon:
+  mac: 32:3A:FD:B8:0E:29
+  name: fritzRepeater2
+  picture:
+  track: false
+
+node1:
+  icon:
+  mac: DC:A6:32:67:AE:CE
+  name: node1
+  picture:
+  track: false
+
+node2:
+  icon:
+  mac: B8:27:EB:0E:36:46
+  name: node2
+  picture:
+  track: false
+
+node3:
+  icon:
+  mac: B8:27:EB:6A:73:06
+  name: node3
+  picture:
+  track: false
+
+shelly1_12bf72:
+  icon:
+  mac: CC:50:E3:12:BF:72
+  name: shelly1-12BF72
+  picture:
+  track: false
+
+shelly1_12c369:
+  icon:
+  mac: CC:50:E3:12:C3:69
+  name: shelly1-12C369
+  picture:
+  track: false
+
+shelly1_12c414:
+  icon:
+  mac: CC:50:E3:12:C4:14
+  name: shelly1-12C414
+  picture:
+  track: false
+
+shelly1_12c667:
+  icon:
+  mac: CC:50:E3:12:C6:67
+  name: shelly1-12C667
+  picture:
+  track: false
+
+shelly1_2c12e4:
+  icon:
+  mac: 3C:71:BF:2C:12:E4
+  name: shelly1-2C12E4
+  picture:
+  track: false
+
+shelly1_553e47:
+  icon:
+  mac: B4:E6:2D:55:3E:47
+  name: shelly1-553E47
+  picture:
+  track: false
+
+shellyswitch_55bed7:
+  icon:
+  mac: B4:E6:2D:55:BE:D7
+  name: shellyswitch-55BED7
+  picture:
+  track: false
+
+shellyswitch_55c994:
+  icon:
+  mac: B4:E6:2D:55:C9:94
+  name: shellyswitch-55C994
+  picture:
+  track: false
+
+shellyswitch_5a3d55:
+  icon:
+  mac: B4:E6:2D:5A:3D:55
+  name: shellyswitch-5A3D55
+  picture:
+  track: false
+
+shellyswitch_5a41c4:
+  icon:
+  mac: B4:E6:2D:5A:41:C4
+  name: shellyswitch-5A41C4
+  picture:
+  track: false
+
+shellyswitch_5a41c5:
+  icon:
+  mac: B4:E6:2D:5A:41:C5
+  name: shellyswitch-5A41C5
+  picture:
+  track: false
+
+shellyswitch_5a4700:
+  icon:
+  mac: B4:E6:2D:5A:47:00
+  name: shellyswitch-5A4700
+  picture:
+  track: false
+
+shellyswitch_5a4c4e:
+  icon:
+  mac: B4:E6:2D:5A:4C:4E
+  name: shellyswitch-5A4C4E
+  picture:
+  track: false
+
+shellyswitch25_73cbcd:
+  icon:
+  mac: 80:7D:3A:73:CB:CD
+  name: shellyswitch25-73CBCD
+  picture:
+  track: false
+
+shellyht_f05b96:
+  icon:
+  mac: 50:02:91:F0:5B:96
+  name: shellyht-F05B96
+  picture:
+  track: false
+
+pc_192_168_178_38:
+  icon:
+  mac: C8:0E:14:16:E5:E4
+  name: PC-192-168-178-38
+  picture:
+  track: true
+
+pc_192_168_178_1:
+  icon:
+  mac: BC:05:43:AB:62:4B
+  name: PC-192-168-178-1
+  picture:
+  track: false
+
+pc_192_168_178_29:
+  icon:
+  mac: 2C:3A:FD:B8:0E:27
+  name: PC-192-168-178-29
+  picture:
+  track: true
+
+pc_192_168_178_97:
+  icon:
+  mac: 98:F4:AB:F2:A8:92
+  name: PC-192-168-178-97
+  picture:
+  track: false
+
+pc_192_168_178_99:
+  icon:
+  mac: 50:02:91:F0:3F:48
+  name: PC-192-168-178-99
+  picture:
+  track: false
+
+pc_192_168_178_20:
+  icon:
+  mac: 7C:64:56:43:EA:7E
+  name: PC-192-168-178-20
+  picture:
+  track: false
+
+pc_192_168_178_96:
+  icon:
+  mac: 98:F4:AB:F2:AF:63
+  name: PC-192-168-178-96
+  picture:
+  track: false
+
+pc_192_168_178_98:
+  icon:
+  mac: 50:02:91:F0:5A:FA
+  name: PC-192-168-178-98
+  picture:
+  track: false
+
+pc_2c_d9_74_cc_e9_f5:
+  icon:
+  mac: 2C:D9:74:CC:E9:F5
+  name: PC-2C-D9-74-CC-E9-F5
+  picture:
+  track: false
+
+pc_192_168_179_37:
+  icon:
+  mac: D0:B1:28:B2:6B:41
+  name: PC-192-168-179-37
+  picture:
+  track: false
+
+pc_192_168_179_36:
+  icon:
+  mac: 6C:C7:EC:B1:7C:58
+  name: PC-192-168-179-36
+  picture:
+  track: false
+
+pc_192_168_178_100:
+  icon:
+  mac: 08:BE:AC:0A:E5:D3
+  name: PC-192-168-178-100
+  picture:
+  track: false
+
+pc_b8_27_eb_3f_26_53:
+  icon:
+  mac: B8:27:EB:3F:26:53
+  name: PC-B8-27-EB-3F-26-53
+  picture:
+  track: false
+
+pc_2c_3a_fd_8a_be_08:
+  icon:
+  mac: 2C:3A:FD:8A:BE:08
+  name: PC-2C-3A-FD-8A-BE-08
+  picture:
+  track: false
+
+pc_2c_3a_fd_8a_be_09:
+  icon:
+  mac: 2C:3A:FD:8A:BE:09
+  name: PC-2C-3A-FD-8A-BE-09
+  picture:
+  track: false
+
+pc_2c_3a_fd_8a_be_0a:
+  icon:
+  mac: 2C:3A:FD:8A:BE:0A
+  name: PC-2C-3A-FD-8A-BE-0A
+  picture:
+  track: false
+
+pc_2c_3a_fd_8a_be_0b:
+  icon:
+  mac: 2C:3A:FD:8A:BE:0B
+  name: PC-2C-3A-FD-8A-BE-0B
+  picture:
+  track: false

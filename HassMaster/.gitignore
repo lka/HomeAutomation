@@ -1,0 +1,14 @@
+# don't push secrets, use secrets_example.yaml instead
+**\\secrets.yaml
+*.[oa]
+*~
+# don't push database
+.db
+.db
+.log
+shelly.yaml
+.vscode
+appdaemon/
+deps/
+.storage
+.cloud

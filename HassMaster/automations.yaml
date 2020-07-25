@@ -1,0 +1,32 @@
+- id: '1591121198507'
+  alias: TechnikfensterZu
+  description: ''
+  trigger:
+  - entity_id: device_tracker.galaxy_a10
+    for: '30'
+    from: home
+    platform: state
+    to: not_home
+  condition:
+  - condition: state
+    entity_id: input_boolean.automatik
+    state: 'on'
+  action:
+  - entity_id: cover.shelly_shsw_21_5a3d55
+    service: cover.close_cover
+- id: '1591121336440'
+  alias: TechnikfensterAuf
+  description: ''
+  trigger:
+  - entity_id: device_tracker.galaxy_a10
+    for: '10'
+    from: not_home
+    platform: state
+    to: home
+  condition:
+  - after: '8:00'
+    before: '19:00'
+    condition: time
+  action:
+  - entity_id: cover.shelly_shsw_21_5a3d55
+    service: cover.open_cover
