@@ -31,4 +31,6 @@ After tried k8s I decided to have a look at K3S as a kubernetes cluster, because
 
 The base is hypriot-OS flashed on a 64 Mbit card. Then configured to get access via ssh and correct keyboard layout and language settings.
 
-There is 
+K3S cannot work with nftables which is installed in Raspbian Buster by default, so you have to switch to legacy iptables by executing the script PiAtMaster/k3s/legacy-iptables.sh.
+
+
