@@ -1,0 +1,15 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: "hass-home-assistant-ingress"
+  namespace: default
+
+spec:
+  rules:
+    - host: node1
+      http:
+        paths:
+          - path: /hass
+            backend:
+              serviceName: hass-home-assistant
+              servicePort: 8123

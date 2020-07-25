@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingressroute-notls
+  namespace: default
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`node1.fritz.box`) && PathPrefix(`/whoami`)
+      kind: Rule
+      services:
+        - name: whoami
+          port: 80
+
