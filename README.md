@@ -24,3 +24,7 @@ Downloaded windows version of helm from https://github.com/helm/helm/releases an
 
 I have no idea why the file .gitignore doesn't work when I add entries after the files that it should ignore.
 
+
+## K3S
+
+After tried k8s I decided to have a look at K3S es a kubernetes cluster, because of the restrictions of the raspberry pies.
