@@ -1,0 +1,65 @@
+'1594142243338':
+  alias: Rasen bewässern
+  sequence:
+  - data: {}
+    entity_id: switch.zone_1
+    service: switch.turn_on
+  - delay: '{{states(''input_datetime.dauer_zone1'')}}'
+  - data: {}
+    entity_id: switch.zone_1
+    service: switch.turn_off
+  - delay: '{{states(''input_datetime.dauer_pause'')}}'
+  - data: {}
+    entity_id: switch.zone_5
+    service: switch.turn_on
+  - delay: '{{states(''input_datetime.dauer_zone5'')}}'
+  - data: {}
+    entity_id: switch.zone_5
+    service: switch.turn_off
+  - delay: '{{states(''input_datetime.dauer_pause'')}}'
+  - data: {}
+    entity_id: switch.zone_2
+    service: switch.turn_on
+  - delay: '{{states(''input_datetime.dauer_zone2'')}}'
+  - data: {}
+    entity_id: switch.zone_2
+    service: switch.turn_off
+  - delay: '{{states(''input_datetime.dauer_pause'')}}'
+'1594908177974':
+  alias: Hecke bewässern
+  sequence:
+  - data: {}
+    entity_id: switch.zone_6
+    service: switch.turn_on
+  - delay: '{{states(''input_datetime.dauer_zone6'')}}'
+  - data: {}
+    entity_id: switch.zone_6
+    service: switch.turn_off
+  - delay: '{{states(''input_datetime.dauer_pause'')}}'
+'1594910512139':
+  alias: Beetebewässerung
+  sequence:
+  - data: {}
+    entity_id: switch.zone_4
+    service: switch.turn_on
+  - delay: '{{states(''input_datetime.dauer_zone4'')}}'
+  - data: {}
+    entity_id: switch.zone_4
+    service: switch.turn_off
+  - delay: '{{states(''input_datetime.dauer_pause'')}}'
+  - data: {}
+    entity_id: switch.zone_3
+    service: switch.turn_on
+  - delay: '{{states(''input_datetime.dauer_zone3'')}}'
+  - data: {}
+    entity_id: switch.zone_3
+    service: switch.turn_off
+  - delay: '{{states(''input_datetime.dauer_pause'')}}'
+  - data: {}
+    entity_id: switch.zone_7
+    service: switch.turn_on
+  - delay: '{{states(''input_datetime.dauer_zone7'')}}'
+  - data: {}
+    entity_id: switch.zone_7
+    service: switch.turn_off
+  - delay: '{{states(''input_datetime.dauer_pause'')}}'

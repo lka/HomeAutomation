@@ -22,3 +22,5 @@ Downloaded windows version of helm from https://github.com/helm/helm/releases an
 
 ---
 
+I have no idea why the file .gitignore doesn't work when I add entries after the files that it should ignore.
+

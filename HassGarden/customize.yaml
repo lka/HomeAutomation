@@ -1,0 +1,2 @@
+sensor.cpu_temperature:
+  unit_of_measurement: °C

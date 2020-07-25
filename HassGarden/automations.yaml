@@ -1,0 +1,59 @@
+- id: '1594907097659'
+  alias: bewässere den Rasen
+  description: ''
+  trigger:
+  - event: sunrise
+    offset: -04:00
+    platform: sun
+  condition:
+  - condition: template
+    value_template: '{% set arr = [''mo'', ''di'', ''mi'', ''do'', ''fr'', ''sa'',
+      ''so''] %}
+
+      {{states(''input_boolean.rasen_'' + arr[now().isoweekday()|int-1]) == ''on''
+      }}'
+  - below: '5.0'
+    condition: numeric_state
+    entity_id: sensor.weather_precipitation
+  action:
+  - service: script.1594142243338
+- id: '1594908648955'
+  alias: bewässere die Hecke
+  description: ''
+  trigger:
+  - event: sunset
+    platform: sun
+  condition:
+  - condition: template
+    value_template: '{% set arr = [''mo'', ''di'', ''mi'', ''do'', ''fr'', ''sa'',
+      ''so''] %}
+
+      {{states(''input_boolean.hecke_'' + arr[now().isoweekday()|int-1]) == ''on''
+      }}
+
+      '
+  - below: '5.0'
+    condition: numeric_state
+    entity_id: sensor.weather_precipitation
+  action:
+  - service: script.1594908177974
+- id: '1594910827082'
+  alias: bewässere die Beete
+  description: ''
+  trigger:
+  - event: sunrise
+    platform: sun
+  condition:
+  - condition: template
+    value_template: '{% set arr = [''mo'', ''di'', ''mi'', ''do'', ''fr'', ''sa'',
+      ''so''] %}
+
+      {{states(''input_boolean.beete_'' + arr[now().isoweekday()|int-1]) == ''on''
+      }}
+
+      '
+  - below: '5.0'
+    condition: numeric_state
+    entity_id: sensor.weather_precipitation
+  action:
+  - service: script.1594910512139
