@@ -1,5 +1,5 @@
 # don't push secrets, use secrets_example.yaml instead
-secrets.yaml
+**/secrets.yaml
 *.[oa]
 *~
 # don't push database
