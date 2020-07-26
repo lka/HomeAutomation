@@ -35,6 +35,10 @@ K3S cannot work with nftables which is installed in Raspbian Buster by default, 
 
 I want to have my own configuration for local-storage and the newest version of traefik, so I don't install them by default. Use the script PiAtMaster/k3s/createOrUpdateK3S.sh to install k3s master.
 
+### Kubernetes-Dashboard
+
+To upgrade the Dashboard you can use PiAtMaster/kubernetes-dashboard/upgradeDashboard.sh and to get the necessary token for access to the Dashboard you can use PiAtMaster/kubernetes-dashboard/get-kubernetes-token.sh.
+
 ### Local-Storage
 
 Home Assistant uses SQLight Version 3.x by default and this database (I think no database) doesn't perform well on NFS Storage. So I decided to use a Raspberry Pi 4 with a USB HDD on USB 3 Port and on this HDD I placed the local-storage for the pods. See PiAtMaster/localStorage/create_localStorage.sh.
