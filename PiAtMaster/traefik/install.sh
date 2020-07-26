@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# helm install traefik stable/traefik -n kube-system -f values.yaml
+# helm repo add traefik https://containous.github.io/traefik-helm-chart
 helm install traefik traefik/traefik -f values.yaml -n kube-system
 

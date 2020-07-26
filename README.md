@@ -44,3 +44,7 @@ To upgrade the Dashboard you can use PiAtMaster/kubernetes-dashboard/upgradeDash
 Home Assistant uses SQLight Version 3.x by default and this database (I think no database) doesn't perform well on NFS Storage. So I decided to use a Raspberry Pi 4 with a USB HDD on USB 3 Port and on this HDD I placed the local-storage for the pods. See PiAtMaster/localStorage/create_localStorage.sh.
 
 For each node I created a nX-pvc.yaml and assigned it with 'kubectl apply -f nX-pvc.yaml' and labeled each node with 'kubectl label nodes nodeX disktype=nodeX-pv' where X is 1 .. 3.
+
+### traefik
+
+traefik is the ingress controller and load balancer used by k3s and it is installed by helm chart and the configuration values in PiAtMaster/traefik/values.yaml. There you can change the version and call install.sh or delete.sh or upgrade.sh
