@@ -45,6 +45,18 @@ Home Assistant uses SQLight Version 3.x by default and this database (I think no
 
 For each node I created a nX-pvc.yaml and assigned it with 'kubectl apply -f nX-pvc.yaml' and labeled each node with 'kubectl label nodes nodeX disktype=nodeX-pv' where X is 1 .. 3.
 
-### traefik
+### Traefik
 
-traefik is the ingress controller and load balancer used by k3s and it is installed by helm chart and the configuration values in PiAtMaster/traefik/values.yaml. There you can change the version and call install.sh or delete.sh or upgrade.sh
+Traefik is the ingress controller and load balancer used by k3s and it is installed by helm chart and the configuration values in PiAtMaster/traefik/values.yaml. There you can change the version and call install.sh or delete.sh or upgrade.sh.
+The dashboard of traefik can be accesssed by http://192.168.178.45/dashboard/ 
+
+### Home Assistant
+
+Home assistant is installed with a helm chart and that can be controlled by values.yaml in PiAtMaster/hass.
+It can be installed with install.sh or upgraded with upgrade.sh after changing the tag in values.yaml to the new version.
+Be careful and read the upgrade notice before, last time there was a change of the database with no way back....
+
+The configuration directory of home assistant is the local-storage defined before in the Local-Storage section.
+You can find it in the master node at /media/usbdrive/pvc......long..description...local-path-pvc/
+This directory is the directory, where you can do changes in configuration.yaml and other yaml files for home assistant.
+This directory should be saved with a backup script....
