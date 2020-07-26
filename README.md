@@ -22,8 +22,8 @@ Downloaded windows version of helm from https://github.com/helm/helm/releases an
 
 ---
 
-I have no idea why the file .gitignore doesn't work when I add entries after the files that it should ignore.
-
+I had no idea why the file .gitignore doesn't work when I add entries after the files that it should ignore.
+Git ignores files that are already in the repository. So you have to remove the file first  with "git rm \<file\>" then you can add it to the .gitignore and push this to repo.
 
 ## K3S
 
