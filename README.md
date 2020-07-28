@@ -35,6 +35,12 @@ K3S cannot work with nftables which is installed in Raspbian Buster by default, 
 
 I want to have my own configuration for local-storage and the newest version of traefik, so I don't install them by default. Use the script PiAtMaster/k3s/createOrUpdateK3S.sh to install k3s master.
 
+on Master get K3S-TOKEN with 'sudo cat /var/lib/rancher/k3s/server/node-token'
+
+### K3S - Worker nodes
+
+On each worker node first set iptables to legacy, then install K3S Agent with 'curl -sfL https://get.k3s.io | K3S_URL=https://node1:6443 K3S_TOKEN=$K3S_TOKEN sh -'
+
 ### Kubernetes-Dashboard
 
 To upgrade the Dashboard you can use PiAtMaster/kubernetes-dashboard/upgradeDashboard.sh and to get the necessary token for access to the Dashboard you can use PiAtMaster/kubernetes-dashboard/get-kubernetes-token.sh.
