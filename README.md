@@ -66,3 +66,8 @@ The configuration directory of home assistant is the local-storage defined befor
 You can find it in the master node at /media/usbdrive/pvc......long..description...local-path-pvc/
 This directory is the directory, where you can do changes in configuration.yaml and other yaml files for home assistant.
 This directory should be saved with a backup script....
+
+If there is a problem with dns:
+* nslookup heise.de.
+
+doesn't deliver any address then upgrade k3s, then it works.
