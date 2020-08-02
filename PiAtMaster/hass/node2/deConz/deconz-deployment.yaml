@@ -1,0 +1,58 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: deconz-svc
+  labels:
+    app: deconz
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    app: deconz
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deconz-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deconz
+  template:
+    metadata:
+      labels:
+        app: deconz
+    spec:
+      hostNetwork: true
+      nodeSelector:
+        disktype: node2-pv
+      volumes:
+        - name: deconz-pv-storage
+          persistentVolumeClaim:
+            claimName: deconz-pvc
+        - name: localtime
+          hostPath:
+            path: /etc/localtime:ro
+        - name: ttyacm
+          hostPath:
+            path: /dev/ttyACM0
+      containers:
+        - name: deconz
+          image: marthoc/deconz:latest
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - mountPath: "/opt/deconz"
+              name: deconz-pv-storage
+            - mountPath: "/etc/localtime"
+              name: localtime
+            - mountPath: /dev/ttyACM0
+              name: ttyacm
+

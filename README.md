@@ -71,3 +71,10 @@ If there is a problem with dns:
 * nslookup heise.de.
 
 doesn't deliver any address then upgrade k3s, then it works.
+
+If there is a problem with python site-packages:
+* there are errors with rpi_gpio --> Module not found
+
+log in into container, give command 'ln -s /config/deps /root/.local', the kill process of python, the container restarts and it works...
+
+Deconz in a container doesn't work on node2. I have installed it with flash-card in a separate raspi II from hass.io, then configured it and it worked after 27 minutes.
