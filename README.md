@@ -78,3 +78,7 @@ If there is a problem with python site-packages:
 log in into container, give command 'ln -s /config/deps /root/.local', then kill the python process, the container restarts and it works...
 
 Deconz in a container doesn't work on node2. I have installed it with flash-card in a separate raspi II from hass.io, then configured it and it worked after 27 minutes.
+
+After update from 0.112.4 to 0.113.3 the lovelace-multiple-entity-row must be reconfigured in http://node1:8123/config/lovelace/resources with
+URL: /local/community/lovelace-multiple-entity-row/multiple-entity-row.js
+Resource-Type: JavaScript-Modul
