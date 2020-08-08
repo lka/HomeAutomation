@@ -1,4 +1,4 @@
 #!/bin/bash
 
-helm install hass -f values.yaml stable/home-assistant
+helm install hass -f values.yaml billimek/home-assistant
 

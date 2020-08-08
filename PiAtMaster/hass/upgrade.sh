@@ -1,4 +1,4 @@
 #!/bin/bash
 
-helm upgrade hass -f values.yaml stable/home-assistant
+helm upgrade hass -f values.yaml billimek/home-assistant
 
